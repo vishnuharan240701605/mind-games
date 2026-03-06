@@ -1,0 +1,224 @@
+/* ==========================================
+   DESIGN SYSTEM — CSS Custom Properties
+   ========================================== */
+
+:root {
+  /* ---- Primary Palette ---- */
+  --primary-50: #eef2ff;
+  --primary-100: #dbe4ff;
+  --primary-200: #bac8ff;
+  --primary-300: #91a7ff;
+  --primary-400: #748ffc;
+  --primary-500: #5c7cfa;
+  --primary-600: #4c6ef5;
+  --primary-700: #4263eb;
+  --primary-800: #3b5bdb;
+  --primary-900: #364fc7;
+
+  /* ---- Accent (Warm) ---- */
+  --accent-50: #fff4e6;
+  --accent-100: #ffe8cc;
+  --accent-200: #ffd8a8;
+  --accent-300: #ffc078;
+  --accent-400: #ffa94d;
+  --accent-500: #ff922b;
+  --accent-600: #fd7e14;
+  --accent-700: #f76707;
+  --accent-800: #e8590c;
+  --accent-900: #d9480f;
+
+  /* ---- Success ---- */
+  --success-50: #ebfbee;
+  --success-100: #d3f9d8;
+  --success-400: #69db7c;
+  --success-500: #51cf66;
+  --success-600: #40c057;
+  --success-700: #37b24d;
+
+  /* ---- Warning ---- */
+  --warning-50: #fff9db;
+  --warning-400: #ffd43b;
+  --warning-500: #fcc419;
+  --warning-600: #fab005;
+
+  /* ---- Error ---- */
+  --error-50: #fff5f5;
+  --error-400: #ff6b6b;
+  --error-500: #fa5252;
+  --error-600: #f03e3e;
+  --error-700: #e03131;
+
+  /* ---- Purple ---- */
+  --purple-50: #f3f0ff;
+  --purple-100: #e5dbff;
+  --purple-400: #b197fc;
+  --purple-500: #9775fa;
+  --purple-600: #845ef7;
+  --purple-700: #7950f2;
+
+  /* ---- Teal ---- */
+  --teal-50: #e6fcf5;
+  --teal-400: #38d9a9;
+  --teal-500: #20c997;
+  --teal-600: #12b886;
+
+  /* ---- Pink ---- */
+  --pink-50: #fff0f6;
+  --pink-400: #f783ac;
+  --pink-500: #e64980;
+  --pink-600: #d6336c;
+}
+
+/* ==========================================
+   LIGHT THEME
+   ========================================== */
+[data-theme="light"] {
+  --bg-primary: #f8f9fc;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f1f3f9;
+  --bg-card: #ffffff;
+  --bg-card-hover: #f8f9fc;
+  --bg-glass: rgba(255, 255, 255, 0.7);
+  --bg-overlay: rgba(0, 0, 0, 0.4);
+
+  --text-primary: #1a1d2e;
+  --text-secondary: #5a5f7a;
+  --text-tertiary: #8b8fa8;
+  --text-inverse: #ffffff;
+
+  --border-light: #e8ebf4;
+  --border-medium: #d1d5e4;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.12);
+  --shadow-glow: 0 0 30px rgba(92, 124, 250, 0.15);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.06), 0 0 1px rgba(0, 0, 0, 0.1);
+
+  --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-primary: linear-gradient(135deg, var(--primary-500), var(--purple-600));
+  --gradient-accent: linear-gradient(135deg, var(--accent-400), var(--pink-500));
+  --gradient-success: linear-gradient(135deg, var(--teal-500), var(--success-500));
+  --gradient-warm: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-cool: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  --gradient-card: linear-gradient(145deg, #ffffff, #f8f9fc);
+
+  --nav-bg: rgba(255, 255, 255, 0.85);
+  --nav-border: rgba(232, 235, 244, 0.8);
+}
+
+/* ==========================================
+   DARK THEME
+   ========================================== */
+[data-theme="dark"] {
+  --bg-primary: #0f1117;
+  --bg-secondary: #181b28;
+  --bg-tertiary: #1e2235;
+  --bg-card: #1e2235;
+  --bg-card-hover: #252a40;
+  --bg-glass: rgba(24, 27, 40, 0.8);
+  --bg-overlay: rgba(0, 0, 0, 0.6);
+
+  --text-primary: #e8eaf0;
+  --text-secondary: #a0a4b8;
+  --text-tertiary: #6b7094;
+  --text-inverse: #0f1117;
+
+  --border-light: #2a2f45;
+  --border-medium: #363c58;
+
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.5);
+  --shadow-xl: 0 20px 60px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 30px rgba(92, 124, 250, 0.2);
+  --shadow-card: 0 2px 8px rgba(0, 0, 0, 0.3), 0 0 1px rgba(255, 255, 255, 0.05);
+
+  --gradient-hero: linear-gradient(135deg, #1e2235 0%, #2a1545 100%);
+  --gradient-primary: linear-gradient(135deg, var(--primary-600), var(--purple-700));
+  --gradient-accent: linear-gradient(135deg, var(--accent-500), var(--pink-600));
+  --gradient-success: linear-gradient(135deg, var(--teal-600), var(--success-600));
+  --gradient-warm: linear-gradient(135deg, #c850c0 0%, #d94065 100%);
+  --gradient-cool: linear-gradient(135deg, #3a8fd8 0%, #00c4d4 100%);
+  --gradient-card: linear-gradient(145deg, #1e2235, #252a40);
+
+  --nav-bg: rgba(15, 17, 23, 0.9);
+  --nav-border: rgba(42, 47, 69, 0.8);
+}
+
+/* ==========================================
+   HIGH CONTRAST THEME OVERRIDES
+   ========================================== */
+[data-high-contrast="true"] {
+  --text-primary: #000000;
+  --text-secondary: #1a1a1a;
+  --border-light: #333333;
+  --border-medium: #000000;
+}
+[data-theme="dark"][data-high-contrast="true"] {
+  --text-primary: #ffffff;
+  --text-secondary: #e0e0e0;
+  --border-light: #cccccc;
+  --border-medium: #ffffff;
+}
+
+/* ==========================================
+   SPACING & RADIUS
+   ========================================== */
+:root {
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+  --space-4xl: 6rem;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  --font-xs: clamp(0.7rem, 0.65rem + 0.25vw, 0.75rem);
+  --font-sm: clamp(0.8rem, 0.75rem + 0.25vw, 0.875rem);
+  --font-base: clamp(0.9rem, 0.85rem + 0.25vw, 1rem);
+  --font-md: clamp(1rem, 0.9rem + 0.5vw, 1.125rem);
+  --font-lg: clamp(1.1rem, 1rem + 0.5vw, 1.25rem);
+  --font-xl: clamp(1.25rem, 1.1rem + 0.75vw, 1.5rem);
+  --font-2xl: clamp(1.5rem, 1.25rem + 1.25vw, 2rem);
+  --font-3xl: clamp(1.8rem, 1.5rem + 1.5vw, 2.5rem);
+  --font-4xl: clamp(2.2rem, 1.8rem + 2vw, 3.5rem);
+  --font-5xl: clamp(2.8rem, 2.2rem + 3vw, 4.5rem);
+
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+  --transition-slow: 400ms ease;
+  --transition-spring: 500ms cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-modal: 300;
+  --z-toast: 400;
+  --z-confetti: 500;
+
+  --container-max: 1200px;
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+}
+
+/* ---- Font Scaling ---- */
+[data-font-scale="large"] {
+  --font-xs: clamp(0.85rem, 0.8rem + 0.25vw, 0.9rem);
+  --font-sm: clamp(0.95rem, 0.9rem + 0.25vw, 1.05rem);
+  --font-base: clamp(1.05rem, 1rem + 0.25vw, 1.2rem);
+  --font-md: clamp(1.15rem, 1.05rem + 0.5vw, 1.35rem);
+  --font-lg: clamp(1.3rem, 1.2rem + 0.5vw, 1.5rem);
+  --font-xl: clamp(1.5rem, 1.3rem + 0.75vw, 1.8rem);
+  --font-2xl: clamp(1.8rem, 1.5rem + 1.25vw, 2.4rem);
+  --font-3xl: clamp(2.1rem, 1.8rem + 1.5vw, 3rem);
+  --font-4xl: clamp(2.6rem, 2.1rem + 2vw, 4rem);
+}
